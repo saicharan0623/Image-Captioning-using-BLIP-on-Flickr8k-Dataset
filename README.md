@@ -1,26 +1,27 @@
 # Image Captioning using BLIP on Flickr8K Dataset
 
-## 🚀 Overview
+##  Overview
 This project implements an end-to-end Image Captioning system using BLIP (Bootstrapping Language-Image Pretraining) on the Flickr8K Dataset. The core idea is to convert an input image into a meaningful, human-readable caption using a pre-trained multimodal transformer.
 
-## 💡 Motivation
+##  Motivation
 Automatically generating captions for images is a fundamental task combining computer vision and natural language processing. Applications range from assistive tech for the visually impaired to content management systems and intelligent search tools.
 
-## 📚 Dataset
+##  Dataset
 - **Name**: Flickr8K
 - **Size**: ~8,000 images
 - **Captions**: 5 human-written captions per image
 - **Source**: Flickr
+- **Compiler**: Kaggle
 
 The dataset is preprocessed to clean text, fix image paths, and split into training and validation sets.
 
-## 🧠 Model Architecture
+##  Model Architecture
 - **Base Model**: Salesforce's BLIP (image-captioning-base)
 - **Image Encoder**: Vision Transformer (ViT)
 - **Text Decoder**: Transformer-based LM
 - **Library Used**: Hugging Face's `transformers`
 
-## 🔧 Implementation Highlights
+##  Implementation Highlights
 - Preprocessing handled via `BLIPProcessor`
 - Model fine-tuned using PyTorch
 - Optimizer: `AdamW`
@@ -47,20 +48,14 @@ The dataset is preprocessed to clean text, fix image paths, and split into train
 - Improve evaluation metrics (CIDEr, SPICE)
 - Deploy real-time caption generation API
 
-## 📦 Installation
+##  Installation
 ```bash
 git clone https://github.com/saicharan0623/Image-Captioning-using-BLIP-on-Flickr8k-Dataset.git
 cd Image-Captioning-using-BLIP-on-Flickr8k-Dataset
 pip install -r requirements.txt
 ```
 
-## 💻 Usage
-```python
-python train.py
-python infer.py --image_path path/to/image.jpg
-```
-
-## 🤝 Contributors
+##  Contributors
 - Sai Charan M
 - Ananya Peddamgari
 - Pujitha Charala
